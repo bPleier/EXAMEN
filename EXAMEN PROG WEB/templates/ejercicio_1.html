@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Compras</title>
+</head>
+<body>
+<div style="border-style:solid; border-radius:5px; justify-content:center; border-width:1px; width:300px; text-align:left; align-content:center; align-item:center" >
+    <form method="POST" action="">
+        <h1 style="font-size:20px">Cálculo de Compras:</h1>
+        <label style="font-weight:bold " for="nombre"> Ingresa tu Nombre:</label><br>
+        <input style="width:250px" type="text"name="nombre" value="{{ nombre }}" required><br>
+        <br>
+        <label style="font-weight:bold" for="edad"> Ingresa tu Edad:</label><br>
+        <input style="width:250px" type="number"min="1" name="edad" value="{{ edad  }}" required><br>
+        <br>
+        <label style="font-weight:bold" for="tarros"> Ingresa los Tarros de Pintura a Comprar:</label><br>
+        <input style="width:250px" type="number" min="1" name="tarros" value="{{ tarros }}" required><br>
+        <br>
+        <input style="height:35px; width:65px; border-radius: 5px; background-color:#007BF1; color:white" type="submit" value="Calcular"><br>
+        <br>
+        <label>{{saludo_cliente}}</label><br>
+        <br>
+        <label>{{total1}}</label><br>
+        <br>
+        <label>{{total2}}</label><br>
+        <br>
+        <label>{{total3}}</label><br>
+        <br>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+<div style="border-style:solid; border-radius:5px; justify-content:center; border-width:1px;
+    width:350px; text-align:center; align-content:center; align-item:center">
+    <form method="POST">
+        <h1>Inicio de Sesión</h1>
+        <label style="font-size:15px" for="usuario"> Ingresa tu Nombre:</label><br>
+        <input style="width:250px"  type="text" name="usuario" value="{{usuario}}" required><br>
+        <br>
+        <label style="font-size:15px" for="pass1"> Ingresa tu Contraseña:</label><br>
+        <input style="width:250px" type="password" name="pass1" value="{{pass1}}" required><br>
+        <br>
+        <input style="height:35px; width:65px; border-radius: 5px; background-color:#007BF1; color:white" type="submit" value="Verificar"><br>
+        <br>
+        <label value="resultado">{{resultado}}</label><br>
+    </form>
+</div>
+</body>
+</html>
